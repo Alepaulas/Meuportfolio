@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Profissional</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(45deg, #1e1e1e, #2c3e50, #4c669f, #1e1e1e);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: #ffffff;
+            text-align: center;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            transition: transform 0.3s, filter 0.3s;
+        }
+        .profile img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+        .skills {
+            margin-top: 30px;
+            font-size: 1rem;
+        }
+        .skills h2 {
+            font-size: 1.5rem;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+        .dashboard-container {
+            margin-top: 30px;
+            width: 100%;
+            height: 550px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .dashboard-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+        .links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1rem;
+        }
+        .links img {
+            width: 40px;
+            margin-bottom: 5px;
+            transition: transform 0.3s, filter 0.3s;
+        }
+        .links img:hover {
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 1rem;
+            opacity: 0.8;
+            color: #dcdde1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <a href="https://www.linkedin.com/in/alexandra-de-paula-9043652b6/" target="_blank">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQH8FP9ZgGmh8A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727105156798?e=1747872000&v=beta&t=KyLJBSKcjJEBQLUp2D_SxE_UDDq7ktOkTHm9D6_hDCg" alt="Foto de Perfil">
+            </a>
+            <h1>✨ Bem-vindo ao Meu Portfólio Profissional! 🚀</h1>
+            <br>
+            <br>
+            <p>Sou Alexandra de Paula, especialista em análise de dados e desenvolvimento. Tenho experiência com Power BI, Looker Studio, AWS e SQL.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="skills">
+            <h2>Minhas Habilidades</h2>
+            <ul>
+                <li>📊 Power BI e Looker Studio</li>
+                <li>☁️ AWS Cloud Practitioner</li>
+                <li>💾 SQL e Análise de Dados</li>
+                <li>🖥️ Desenvolvimento Web</li>
+                <li>📡 API e Integrações</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="dashboard-container">
+            <iframe title="power bi" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=ec991c70-00f9-4ed7-b1a4-5dade9acde2c&autoAuth=true&ctid=908c7dda-c74d-40de-947a-c8dd7f70524e" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <div class="links">
+            <a href="https://www.linkedin.com/in/alexandra-de-paula-9043652b6/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://www.credly.com/badges/7de6e0db-f24b-48b4-86cf-7b131bdb3d51/linked_in?t=ssl4gk" target="_blank">
+                <img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="Certificação AWS">
+                <span>Certificação AWS</span>
+            </a>
+            <a href="https://github.com/Alepaulas" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+    <p class="footer">🌟 Desenvolvido com dedicação por Alexandra de Paula</p>
+</body>
+</html>
